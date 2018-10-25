@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#shine {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#clock {
+    width: 400px;
+    height: 400px;
+    border: 8px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 18px black;
+}
+
+#circleAtCenter {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-10px, 15px);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(222, 222, 222, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 8px black;
+    z-index: 1;
+}
+
+#hourHand {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    width: 8px;
+    height: 100px;
+    background-color: white;
+    transform-origin: bottom center;
+    /* transform: rotate(85deg); */
+    border-radius: 100% 100% 25% 0;
+}
+
+#minHand {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    width: 8px;
+    height: 150px;
+    background-color: rgb(41, 21, 133);
+    transform-origin: bottom center;
+    /* transform: rotate(35deg); */
+    border-radius: 100% 100% 25% 0;
+}
+
+#secHand {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    width: 8px;
+    height: 180px;
+    background-color: rgb(3, 1, 1);
+    transform-origin: bottom center;
+    /* transform: rotate(0deg); */
+    border-radius: 100% 100% 25% 0;
+}
